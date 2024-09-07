@@ -5,6 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Little Ght</title>
+    <!-- the four required protocol for metadata by ogp -->
+    <meta property="og:title" content="Our menu">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/images/logoght.png">
+    <meta property="og:url" content="https://littleght">
+    <!-- optinal metadeta to privide addional information to user -->
+    <meta property="og:description"
+        content="Little ght is a family-owned African restaurant, focused on traditional recipes served with a modern twist.">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Little Ght">
     <link rel="icon" type="image/png" href="assets/images/logoght.png">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -31,6 +41,32 @@
                 <h2>Our new menu</h2>
                 <p>We've updated our menu with new dinners.</p>
             </article>
+            <h1>Sign Up</h1>
+            <form>
+                <div>
+                    <label for="user_first_name">First Name:</label><br>
+                    <input type="text" id="user_first_name" name="user_first_name">
+                </div>
+                <div>
+                    <label for="user_last_name">Last Name:</label><br>
+                    <input type="text" id="user_last_name" name="user_last_name">
+                </div>
+                <div>
+                    <label for="user_email">Email:</label><br>
+                    <input type="email" id="user_email" name="user_email">
+                </div>
+                <div>
+                    <label for="user_password">Password</label><br>
+                    <input type="password" id="user_password" name="user_password">
+                </div>
+                <div>
+                    <label for="user_confirmed_password">Confirm Password</label><br>
+                    <input type="password" id="user_confirmed_password" name="user_confirmed_password">
+                </div>
+                <div>
+                    <button type="submit" id="btn"> Sign Up</button>
+                </div>
+            </form>
         </main>
         <footer class="footer">
             <p>Copyright Little Lemon</p>
