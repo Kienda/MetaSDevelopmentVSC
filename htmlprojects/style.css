@@ -22,3 +22,27 @@ ul {
     gap: 5px;
     padding-bottom: 10px;
 }
+
+.container_grid {
+    display: grid;
+    height: 150vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+.litte_ght_tittle {
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 2rem;
+}
+
+.container_grid h3 {
+    background-color: rgb(209, 183, 148);
+    text-align: center;
+    padding: 2rem;
+}
+
+footer {
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 2rem;
+}
