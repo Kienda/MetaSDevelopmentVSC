@@ -31,6 +31,15 @@
 }
 
 /* Add rules for steps 8 and 9 */
+p:nth-child(even) {
+    background-color: rebeccapurple;
+}
 
+.letters p:hover {
+    background-color: white;
+    transform: rotateY(360deg);
+    transition: 0.5s;
+
+}
 
 /* Add rules for steps 10 and 11 */
