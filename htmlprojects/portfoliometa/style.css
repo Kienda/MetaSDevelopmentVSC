@@ -52,19 +52,31 @@ nav {
     font-weight: bold;
 }
 
+
 .main {
-    height: 70vh;
+    display: block;
+    padding: 10px;
     margin: 0 10px;
+    background: url(assets/recipe1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+
 }
 
 .firstSection {
-    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    color: white;
 }
 
 .secondSection {
     display: flex;
     justify-content: space-between;
-    height: 60%;
+    height: 70%;
     gap: 10px;
 
 }
@@ -73,12 +85,22 @@ article {
     text-align: center;
     margin: auto;
     border-radius: 10px;
-    height: 80%;
 }
 
 .second {
-    background-color: rgb(243, 237, 237);
+    background-color: rgb(253, 249, 249);
     color: black;
+    padding: 10px;
+    height: 70%;
+}
+
+.second p {
+    font-size: 1.5rem;
+}
+
+.second li {
+    font-size: 1.5rem;
+    list-style: none;
 }
 
 .footer {
@@ -99,21 +121,74 @@ article {
 
 }
 
+/* about style  */
+.secondAbout {
+    background-color: black;
+    color: white;
+    width: 70%;
+    max-height: 90%;
+    padding: 5px;
+    font-size: 1.5rem;
 
+}
+
+/* booking table  */
+.book {
+    background-color: black;
+    display: block;
+    margin: 10px auto;
+    max-width: 60%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.booktable {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    background-color: gainsboro;
+    border-radius: 5px;
+    margin: 5px;
+    border: none;
+    outline: none;
+    height: 30px;
+    max-width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    min-width: 70%;
+}
 
 @media (max-width: 600px) {
     .secondSection {
         display: flex;
         flex-wrap: wrap;
+        height: 30%;
     }
 
     .main {
-        height: 60%;
+        height: 80%;
         margin: 10px;
     }
 
     body {
         font-family: Arial, Helvetica, sans-serif;
         margin: 0;
+
     }
+
+    .secondAbout {
+        width: 100%;
+        padding: 5px;
+
+    }
+
 }
