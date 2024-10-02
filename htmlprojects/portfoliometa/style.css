@@ -1,7 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 3rem 5%;
-    height: 100vh;
+    margin: 0;
 }
 
 h1 {
@@ -12,17 +11,25 @@ h2 {
     font-size: 2rem;
 }
 
+.header {
+    height: 10vh;
+    margin-top: 1rem;
+}
+
 .header>img {
     display: block;
-    margin: 0 auto;
-    width: 50%;
+    margin: auto;
+    width: 500px;
+    object-fit: cover;
+
+
 }
 
 nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: green;
     height: 5vh;
     margin: 5px 0;
 
@@ -45,9 +52,33 @@ nav {
     font-weight: bold;
 }
 
+.main {
+    height: 70vh;
+    margin: 0 10px;
+}
+
+.firstSection {
+    height: 40%;
+}
+
 .secondSection {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 60%;
+    gap: 10px;
+
+}
+
+article {
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+    height: 80%;
+}
+
+.second {
+    background-color: rgb(243, 237, 237);
+    color: black;
 }
 
 .footer {
@@ -61,12 +92,28 @@ nav {
 .footer {
     display: flex;
     justify-content: space-evenly;
-    background-color: black;
+    background-color: green;
     color: white;
     align-items: center;
+    height: 10vh;
 
 }
 
-.footer div {
-    display: 1;
+
+
+@media (max-width: 600px) {
+    .secondSection {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main {
+        height: 60%;
+        margin: 10px;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+    }
 }
